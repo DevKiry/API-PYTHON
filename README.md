@@ -115,15 +115,16 @@ Atualiza os dados de um cliente existente.
 
 Atualiza somente o status do pedido.
 
-**Exemplo:** `PATCH /pedidos/105/status`
+**Exemplo:** `PATCH /cliente/1/status`
 
 ```json
 {
-  "status": "em_producao"
+  "status": "ativo"
 }
 ```
 
-Os status devem ser definidos pelo grupo. Uma sugestão inicial: `recebido`, `em_producao`, `concluido`, `entregue` e `cancelado`.
+Os status devem ser definidos pelo grupo: `ativo` e `desativado`.
+
 
 ### `DELETE /clientes/{id}` — Excluir cliente
 
