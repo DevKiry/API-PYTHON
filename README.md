@@ -111,6 +111,20 @@ Atualiza os dados de um cliente existente.
 }
 ```
 
+### `PATCH /pedidos/{id}/status` — Atualizar status do pedido
+
+Atualiza somente o status do pedido.
+
+**Exemplo:** `PATCH /pedidos/105/status`
+
+```json
+{
+  "status": "em_producao"
+}
+```
+
+Os status devem ser definidos pelo grupo. Uma sugestão inicial: `recebido`, `em_producao`, `concluido`, `entregue` e `cancelado`.
+
 ### `DELETE /clientes/{id}` — Excluir cliente
 
 Solicita a exclusão de um cliente.
